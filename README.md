@@ -9,13 +9,14 @@ Power can be provided as one of:
 * high voltage (240V) AC, unswitched,
 * low voltage (12+12V) AC
 
+AC power is switched in accordance with an opto-isolated 12V-remote signal.
+
 ## Outputs
 
 The circuit provides:
-* 12VDC, linear regulated
-* -12VDC, linear regulated
-* 12VDC, from always-on switchmode brick
-* TBC: muting output per ESP
+* +/-12VDC, linear regulated
+* 12VDC from always-on switchmode brick, for control circuits
+* (un)muting relay output
 
 Very drafty.
 
