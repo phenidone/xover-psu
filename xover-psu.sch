@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Preamplifier Power Supply"
+Date "2021-10-09"
+Rev "A"
+Comp "Tyrrell Zaibatsu"
 Comment1 ""
 Comment2 ""
 Comment3 ""
