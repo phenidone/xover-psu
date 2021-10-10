@@ -851,28 +851,6 @@ Wire Wire Line
 Wire Wire Line
 	1750 3700 2000 3700
 Connection ~ 1750 3700
-$Comp
-L Converter_ACDC:HLK-PM12 PS1
-U 1 1 6164FFC7
-P 3750 6450
-F 0 "PS1" H 3750 6775 50  0000 C CNN
-F 1 "HLK-10M12" H 3750 6684 50  0000 C CNN
-F 2 "Converter_ACDC:Converter_ACDC_HiLink_HLK-PMxx" H 3750 6150 50  0001 C CNN
-F 3 "http://www.hlktech.net/product_detail.php?ProId=56" H 4150 6100 50  0001 C CNN
-	1    3750 6450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:L_Coupled L1
-U 1 1 616524A0
-P 2950 6450
-F 0 "L1" H 2950 6731 50  0000 C CNN
-F 1 "PM3700_70_RC" H 2950 6300 50  0000 C CNN
-F 2 "" H 2950 6450 50  0001 C CNN
-F 3 "~" H 2950 6450 50  0001 C CNN
-	1    2950 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3150 6350 3350 6350
 Wire Wire Line
@@ -1374,8 +1352,8 @@ L Relay:RAYEX-L90S K1
 U 1 1 62014E4C
 P 2150 4350
 F 0 "K1" V 1583 4350 50  0000 C CNN
-F 1 "T9GS5L14-12" V 1674 4350 50  0000 C CNN
-F 2 "" H 2600 4300 50  0001 L CNN
+F 1 "T9GS1L14-12" V 1674 4350 50  0000 C CNN
+F 2 "power:Potter_T9G_Relay" H 2600 4300 50  0001 L CNN
 F 3 "https://a3.sofastcdn.com/attachment/7jioKBjnRiiSrjrjknRiwS77gwbf3zmp/L90-SERIES.pdf" H 2800 4200 50  0001 L CNN
 	1    2150 4350
 	0    1    1    0   
@@ -2000,4 +1978,26 @@ Wire Wire Line
 	9200 5700 9000 5700
 Connection ~ 9200 5700
 Connection ~ 9000 5700
+$Comp
+L Converter_ACDC:HLK-PM12 PS1
+U 1 1 6164FFC7
+P 3750 6450
+F 0 "PS1" H 3750 6775 50  0000 C CNN
+F 1 "HLK-10M12" H 3750 6684 50  0000 C CNN
+F 2 "power:HLK-10M12" H 3750 6150 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=56" H 4150 6100 50  0001 C CNN
+	1    3750 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Coupled L1
+U 1 1 616524A0
+P 2950 6450
+F 0 "L1" H 2950 6731 50  0000 C CNN
+F 1 "PM3700_70_RC" H 2950 6150 50  0000 C CNN
+F 2 "power:PM3700" H 2950 6450 50  0001 C CNN
+F 3 "~" H 2950 6450 50  0001 C CNN
+	1    2950 6450
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
