@@ -1,0 +1,7 @@
+
+Trace min 10mil for 0.5A
+
+Creepage/clearance per IEC-60950-1
+Functional insulation: 3.2/1.5mm
+Basic insulation: 3.2/2mm
+Reinforced insul: 6.4/4mm
