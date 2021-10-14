@@ -1,4 +1,4 @@
-update=Thu 14 Oct 2021 11:30:42 PM ACDT
+update=Fri 15 Oct 2021 01:03:32 AM ACDT
 version=1
 last_client=kicad
 [general]
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/3]
 Name=ERF
 Clearance=0.2
-TrackWidth=1
+TrackWidth=1.5
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
