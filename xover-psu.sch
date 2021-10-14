@@ -16,13 +16,13 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x03 J5
 U 1 1 61A2D78B
-P 4550 4900
-F 0 "J5" H 4468 5217 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 4468 5126 50  0000 C CNN
-F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-3pol" H 4550 4900 50  0001 C CNN
-F 3 "~" H 4550 4900 50  0001 C CNN
-	1    4550 4900
-	-1   0    0    -1  
+P 6450 5800
+F 0 "J5" H 6368 6117 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 6368 6026 50  0000 C CNN
+F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-3pol" H 6450 5800 50  0001 C CNN
+F 3 "~" H 6450 5800 50  0001 C CNN
+	1    6450 5800
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C20
@@ -198,20 +198,7 @@ Wire Wire Line
 	7600 5000 7600 4900
 Connection ~ 7600 4900
 Wire Wire Line
-	7200 4900 7200 4800
-Wire Wire Line
 	7600 5300 7600 5400
-$Comp
-L Transformer:TRANSF6 TR1
-U 1 1 615F91CE
-P 4000 4850
-F 0 "TR1" H 4000 5332 50  0000 C CNN
-F 1 "TRANSF6" H 4000 5241 50  0000 C CNN
-F 2 "pcb:Trafo_CHK-EI54-12VA_Combo" H 4000 4850 50  0001 C CNN
-F 3 "" H 4000 4850 50  0001 C CNN
-	1    4000 4850
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4350 4650 4200 4650
 Wire Wire Line
@@ -228,17 +215,6 @@ Wire Wire Line
 	4750 5000 5050 5000
 Wire Wire Line
 	4900 5250 4900 4900
-$Comp
-L Connector:Screw_Terminal_01x02 J4
-U 1 1 6160CF09
-P 2700 4850
-F 0 "J4" H 2618 5067 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 2618 4976 50  0000 C CNN
-F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 2700 4850 50  0001 C CNN
-F 3 "~" H 2700 4850 50  0001 C CNN
-	1    2700 4850
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	3800 4950 3700 4950
 Wire Wire Line
@@ -260,17 +236,6 @@ F 3 "~" H 10550 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10250 5000 10350 5000
-$Comp
-L Connector:Screw_Terminal_01x02 J1
-U 1 1 6167A3F2
-P 1150 4700
-F 0 "J1" H 1068 4917 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 1068 4826 50  0000 C CNN
-F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 1150 4700 50  0001 C CNN
-F 3 "~" H 1150 4700 50  0001 C CNN
-	1    1150 4700
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J3
 U 1 1 616A734D
@@ -309,25 +274,7 @@ F 3 "~" H 6400 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 5400 6800 5300
-Wire Wire Line
-	7000 5400 7200 5400
-Wire Wire Line
-	7200 5300 7200 5400
-Wire Wire Line
-	7200 5000 7200 4900
-Connection ~ 7200 4900
-Wire Wire Line
-	6800 4800 6800 4900
-Connection ~ 6800 4900
-Wire Wire Line
-	7000 4900 7200 4900
-Wire Wire Line
-	6800 4900 6800 5000
-Wire Wire Line
 	6400 4400 6400 4500
-Wire Wire Line
-	6800 4400 6800 4500
 $Comp
 L Device:R R16
 U 1 1 6168BC76
@@ -351,8 +298,6 @@ Wire Wire Line
 Connection ~ 8050 5300
 Wire Wire Line
 	7600 4900 8050 4900
-Wire Wire Line
-	7200 4400 7200 4500
 Wire Wire Line
 	8050 4850 8050 4900
 Connection ~ 8050 4900
@@ -436,14 +381,6 @@ Wire Wire Line
 	5650 4900 5650 5000
 Wire Wire Line
 	5650 5300 5650 5400
-Wire Wire Line
-	7200 4400 7600 4400
-Connection ~ 7200 4400
-Wire Wire Line
-	7200 4900 7600 4900
-Wire Wire Line
-	7200 5400 7600 5400
-Connection ~ 7200 5400
 $Comp
 L Device:R R19
 U 1 1 619D917A
@@ -676,49 +613,47 @@ Connection ~ 6400 4900
 Wire Wire Line
 	6400 4900 6400 5000
 Wire Wire Line
-	6400 4900 6800 4900
-Wire Wire Line
 	2300 3500 2550 3500
 Connection ~ 2550 3500
 Wire Wire Line
 	1750 3500 2000 3500
 Wire Wire Line
-	3150 6350 3350 6350
+	3150 6150 3350 6150
 Wire Wire Line
-	3150 6550 3350 6550
+	3150 6350 3350 6350
 $Comp
 L Device:C C1
 U 1 1 6166C09B
-P 2450 6450
-F 0 "C1" H 2565 6496 50  0000 L CNN
-F 1 "100n" H 2565 6405 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Rect_L18.0mm_W6.0mm_P15.00mm_FKS3_FKP3" H 2488 6300 50  0001 C CNN
-F 3 "~" H 2450 6450 50  0001 C CNN
-F 4 "Panasonic" H 2450 6450 50  0001 C CNN "MFG Name"
-F 5 "ECQU2A104KLA" H 2450 6450 50  0001 C CNN "MFG Part Num"
-	1    2450 6450
+P 2450 6250
+F 0 "C1" H 2565 6296 50  0000 L CNN
+F 1 "100n" H 2565 6205 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Rect_L18.0mm_W6.0mm_P15.00mm_FKS3_FKP3" H 2488 6100 50  0001 C CNN
+F 3 "~" H 2450 6250 50  0001 C CNN
+F 4 "Panasonic" H 2450 6250 50  0001 C CNN "MFG Name"
+F 5 "ECQU2A104KLA" H 2450 6250 50  0001 C CNN "MFG Part Num"
+	1    2450 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 6250 2750 6350
-Text Label 4700 6250 0    50   ~ 0
-12V
-Text Label 4700 7000 0    50   ~ 0
+	2750 6050 2750 6150
+Text Label 4700 6050 0    50   ~ 0
+VDD
+Text Label 4700 6800 0    50   ~ 0
 DGND
 Text Label 10050 4100 0    50   ~ 0
 VCC
 Text Label 10050 5700 0    50   ~ 0
 VEE
 Text Label 1550 3050 0    50   ~ 0
-12V
+VDD
 Text Notes 10700 5000 0    50   ~ 0
 Regulated\nOutput\n
-Text Notes 5300 6500 0    50   ~ 0
+Text Notes 5300 6300 0    50   ~ 0
 DC Control Supply\nAlways On
 Text Notes 950  3050 0    50   ~ 0
 Relay
 Text Notes 800  4750 0    50   ~ 0
-Line
+AC Line
 $Comp
 L Device:Q_NMOS_GSD Q1
 U 1 1 616B37E8
@@ -781,7 +716,7 @@ F 3 "~" H 1700 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text Label 2950 2150 0    50   ~ 0
-12V
+VDD
 $Comp
 L Device:D D1
 U 1 1 6179954B
@@ -799,7 +734,7 @@ U 1 1 617AD408
 P 3050 4650
 F 0 "F2" H 3050 4835 50  0000 C CNN
 F 1 "500mA" H 3050 4744 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_universal_Type-III" H 3050 4650 50  0001 C CNN
+F 2 "power:Fuseholder5x20_6mm" H 3050 4650 50  0001 C CNN
 F 3 "~" H 3050 4650 50  0001 C CNN
 	1    3050 4650
 	1    0    0    -1  
@@ -807,12 +742,12 @@ $EndComp
 $Comp
 L Device:Fuse_Small F1
 U 1 1 617BC445
-P 1900 6250
-F 0 "F1" H 1900 6435 50  0000 C CNN
-F 1 "500mA" H 1900 6344 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuseholder5x20_horiz_open_universal_Type-III" H 1900 6250 50  0001 C CNN
-F 3 "~" H 1900 6250 50  0001 C CNN
-	1    1900 6250
+P 1900 6050
+F 0 "F1" H 1900 6235 50  0000 C CNN
+F 1 "500mA" H 1900 6144 50  0000 C CNN
+F 2 "power:Fuseholder5x20_6mm" H 1900 6050 50  0001 C CNN
+F 3 "~" H 1900 6050 50  0001 C CNN
+	1    1900 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -820,20 +755,16 @@ Wire Wire Line
 $Comp
 L Device:Varistor RV1
 U 1 1 6183A11D
-P 2150 6450
-F 0 "RV1" H 2253 6496 50  0000 L CNN
-F 1 "10D471K" H 2253 6405 50  0000 L CNN
-F 2 "Varistors:RV_Disc_D12_W3.9_P7.5" V 2080 6450 50  0001 C CNN
-F 3 "~" H 2150 6450 50  0001 C CNN
-	1    2150 6450
+P 2150 6250
+F 0 "RV1" H 2253 6296 50  0000 L CNN
+F 1 "10D471K" H 2253 6205 50  0000 L CNN
+F 2 "Varistors:RV_Disc_D12_W3.9_P7.5" V 2080 6250 50  0001 C CNN
+F 3 "~" H 2150 6250 50  0001 C CNN
+	1    2150 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1350 4700 1650 4700
-Wire Wire Line
-	1800 6250 1650 6250
-Wire Wire Line
-	1650 6250 1650 4700
 $Comp
 L Device:C C2
 U 1 1 618FA673
@@ -867,31 +798,31 @@ Wire Wire Line
 Wire Wire Line
 	3200 4650 3200 4750
 Wire Wire Line
-	2750 6550 2750 6650
+	2750 6350 2750 6450
 Wire Wire Line
-	2750 6650 2450 6650
+	2750 6450 2450 6450
 Wire Wire Line
-	2000 6250 2150 6250
+	2000 6050 2150 6050
 Wire Wire Line
-	2150 6250 2150 6300
-Connection ~ 2150 6250
+	2150 6050 2150 6100
+Connection ~ 2150 6050
 Wire Wire Line
-	2150 6250 2450 6250
+	2150 6050 2450 6050
 Wire Wire Line
-	2150 6600 2150 6650
-Connection ~ 2150 6650
+	2150 6400 2150 6450
+Connection ~ 2150 6450
 Wire Wire Line
-	2150 6650 1500 6650
+	2150 6450 1500 6450
 Wire Wire Line
-	2450 6600 2450 6650
-Connection ~ 2450 6650
+	2450 6400 2450 6450
+Connection ~ 2450 6450
 Wire Wire Line
-	2450 6650 2150 6650
+	2450 6450 2150 6450
 Wire Wire Line
-	2450 6250 2450 6300
-Connection ~ 2450 6250
+	2450 6050 2450 6100
+Connection ~ 2450 6050
 Wire Wire Line
-	2450 6250 2750 6250
+	2450 6050 2750 6050
 $Comp
 L Device:D D3
 U 1 1 61A84659
@@ -942,11 +873,11 @@ Wire Wire Line
 Wire Wire Line
 	2850 2150 3150 2150
 Wire Wire Line
-	4150 6350 4150 6250
+	4150 6150 4150 6050
 Wire Wire Line
-	4150 6250 4250 6250
+	4150 6050 4250 6050
 Wire Wire Line
-	4250 6250 4250 6300
+	4250 6050 4250 6100
 $Comp
 L Device:LED D2
 U 1 1 61C5D4E2
@@ -991,54 +922,54 @@ Wire Wire Line
 Connection ~ 2550 3200
 Wire Wire Line
 	4000 2150 4000 3500
-Connection ~ 4250 6250
+Connection ~ 4250 6050
 Wire Wire Line
-	4250 6250 4550 6250
+	4250 6050 4550 6050
 $Comp
 L Device:LED D4
 U 1 1 61D11E04
-P 4550 6450
-F 0 "D4" H 4543 6666 50  0000 C CNN
-F 1 "LED" H 4543 6575 50  0000 C CNN
-F 2 "LEDs:LED_0805" H 4550 6450 50  0001 C CNN
-F 3 "~" H 4550 6450 50  0001 C CNN
-	1    4550 6450
+P 4550 6250
+F 0 "D4" H 4543 6466 50  0000 C CNN
+F 1 "LED" H 4543 6375 50  0000 C CNN
+F 2 "LEDs:LED_0805" H 4550 6250 50  0001 C CNN
+F 3 "~" H 4550 6250 50  0001 C CNN
+	1    4550 6250
 	0    1    -1   0   
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 61D11E0A
-P 4550 6800
-F 0 "R5" V 4343 6800 50  0000 C CNN
-F 1 "3k9" V 4550 6800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805" V 4480 6800 50  0001 C CNN
-F 3 "~" H 4550 6800 50  0001 C CNN
-	1    4550 6800
+P 4550 6600
+F 0 "R5" V 4343 6600 50  0000 C CNN
+F 1 "3k9" V 4550 6600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805" V 4480 6600 50  0001 C CNN
+F 3 "~" H 4550 6600 50  0001 C CNN
+	1    4550 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 6600 4550 6650
+	4550 6400 4550 6450
 Wire Wire Line
-	4550 6250 4550 6300
-Connection ~ 4550 6250
+	4550 6050 4550 6100
+Connection ~ 4550 6050
 Wire Wire Line
-	4550 6250 4950 6250
+	4550 6050 4950 6050
 Wire Wire Line
-	4950 7000 4550 7000
+	4950 6800 4550 6800
 Wire Wire Line
-	4150 7000 4150 6550
+	4150 6800 4150 6350
 Wire Wire Line
-	4950 6500 4950 7000
+	4950 6300 4950 6800
 Wire Wire Line
-	4550 6950 4550 7000
-Connection ~ 4550 7000
+	4550 6750 4550 6800
+Connection ~ 4550 6800
 Wire Wire Line
-	4550 7000 4250 7000
+	4550 6800 4250 6800
 Wire Wire Line
-	4250 6600 4250 7000
-Connection ~ 4250 7000
+	4250 6400 4250 6800
+Connection ~ 4250 6800
 Wire Wire Line
-	4250 7000 4150 7000
+	4250 6800 4150 6800
 Wire Wire Line
 	9600 4900 9950 4900
 $Comp
@@ -1168,7 +1099,7 @@ Wire Wire Line
 Connection ~ 2900 5150
 Connection ~ 1500 5150
 Wire Wire Line
-	1500 5150 1500 6650
+	1500 5150 1500 6450
 Text Label 10050 4900 0    50   ~ 0
 AGND
 $Comp
@@ -1222,7 +1153,7 @@ $EndComp
 Text Label 4800 2100 0    50   ~ 0
 AC2
 Text Label 4800 1350 0    50   ~ 0
-RECT2
+RECT1B
 Text Label 4800 2600 0    50   ~ 0
 AGND
 $Comp
@@ -1307,7 +1238,7 @@ $EndComp
 Wire Wire Line
 	9100 1350 8850 1350
 Text Label 8850 1350 0    50   ~ 0
-12V
+VDD
 Wire Wire Line
 	9800 2600 9800 2550
 Wire Wire Line
@@ -1400,27 +1331,6 @@ F 3 "~" H 9550 1850 50  0001 C CNN
 	1    9550 1850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6800 4400 7000 4400
-Connection ~ 6800 4400
-Wire Wire Line
-	7000 4400 7000 4500
-Connection ~ 7000 4400
-Wire Wire Line
-	7000 4400 7200 4400
-Wire Wire Line
-	7000 4800 7000 4900
-Wire Wire Line
-	7000 4900 6800 4900
-Connection ~ 7000 4900
-Wire Wire Line
-	7000 4900 7000 5000
-Wire Wire Line
-	7000 5300 7000 5400
-Wire Wire Line
-	7000 5400 6800 5400
-Connection ~ 7000 5400
-Connection ~ 6800 5400
 Wire Wire Line
 	7600 2100 7650 2100
 Wire Wire Line
@@ -1618,8 +1528,6 @@ Wire Wire Line
 Connection ~ 7650 2600
 Connection ~ 8100 2600
 Wire Wire Line
-	8100 2600 8350 2600
-Wire Wire Line
 	8100 1900 8050 1900
 Wire Wire Line
 	9000 4100 9200 4100
@@ -1653,24 +1561,24 @@ Connection ~ 9000 5700
 $Comp
 L Converter_ACDC:HLK-PM12 PS1
 U 1 1 6164FFC7
-P 3750 6450
-F 0 "PS1" H 3750 6775 50  0000 C CNN
-F 1 "HLK-10M12" H 3750 6684 50  0000 C CNN
-F 2 "power:HLK-10M12" H 3750 6150 50  0001 C CNN
-F 3 "http://www.hlktech.net/product_detail.php?ProId=56" H 4150 6100 50  0001 C CNN
-	1    3750 6450
+P 3750 6250
+F 0 "PS1" H 3750 6575 50  0000 C CNN
+F 1 "HLK-10M12" H 3750 6484 50  0000 C CNN
+F 2 "power:HLK-10M12" H 3750 5950 50  0001 C CNN
+F 3 "http://www.hlktech.net/product_detail.php?ProId=56" H 4150 5900 50  0001 C CNN
+	1    3750 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:L_Coupled L1
 U 1 1 616524A0
-P 2950 6450
-F 0 "L1" H 2950 6731 50  0000 C CNN
-F 1 "PM3700_70_RC" H 2950 6150 50  0000 C CNN
-F 2 "power:PM3700" H 2950 6450 50  0001 C CNN
-F 3 "~" H 2950 6450 50  0001 C CNN
-F 4 "Bourns" H 2950 6450 50  0001 C CNN "MFG Name"
-	1    2950 6450
+P 2950 6250
+F 0 "L1" H 2950 6531 50  0000 C CNN
+F 1 "PM3700_70_RC" H 2950 5950 50  0000 C CNN
+F 2 "power:PM3700" H 2950 6250 50  0001 C CNN
+F 3 "~" H 2950 6250 50  0001 C CNN
+F 4 "Bourns" H 2950 6250 50  0001 C CNN "MFG Name"
+	1    2950 6250
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1689,62 +1597,48 @@ $EndComp
 $Comp
 L Device:CP C3
 U 1 1 61BC9237
-P 4250 6450
-F 0 "C3" H 4368 6496 50  0000 L CNN
-F 1 "220u" H 4368 6405 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_10x10" H 4288 6300 50  0001 C CNN
-F 3 "~" H 4250 6450 50  0001 C CNN
-F 4 "EEEFP1H221AP" H 4250 6450 50  0001 C CNN "MFG Part Num"
-F 5 "Panasonic" H 4250 6450 50  0001 C CNN "MFG Name"
-	1    4250 6450
+P 4250 6250
+F 0 "C3" H 4368 6296 50  0000 L CNN
+F 1 "220u" H 4368 6205 50  0000 L CNN
+F 2 "Capacitors_SMD:CP_Elec_10x10" H 4288 6100 50  0001 C CNN
+F 3 "~" H 4250 6250 50  0001 C CNN
+F 4 "EEEFP1H221AP" H 4250 6250 50  0001 C CNN "MFG Part Num"
+F 5 "Panasonic" H 4250 6250 50  0001 C CNN "MFG Name"
+	1    4250 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Reference_Voltage:TL431DBZ U2
 U 1 1 61D31B4E
-P 6250 2450
-F 0 "U2" V 6296 2380 50  0000 R CNN
-F 1 "TL431DBZ" H 6200 2350 50  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 6250 2300 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6250 2450 50  0001 C CIN
-	1    6250 2450
+P 6400 2250
+F 0 "U2" V 6446 2180 50  0000 R CNN
+F 1 "TL431DBZ" H 6350 2150 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6400 2100 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 6400 2250 50  0001 C CIN
+	1    6400 2250
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6150 2450 6150 2250
-Wire Wire Line
-	6250 2350 6250 2100
 Connection ~ 6400 2600
-Wire Wire Line
-	6250 2550 6250 2600
 Wire Wire Line
 	6150 2250 6300 2250
 Wire Wire Line
-	6250 2100 6400 2100
-Wire Wire Line
-	6250 2600 6400 2600
-Wire Wire Line
 	6150 2100 6150 2250
-Connection ~ 6150 2250
 Wire Wire Line
 	4750 1350 6400 1350
 Connection ~ 6400 1350
 Wire Wire Line
 	6000 2100 6150 2100
 Connection ~ 6000 2100
-Wire Wire Line
-	6000 2600 6250 2600
 Connection ~ 6000 2600
-Connection ~ 6250 2600
 $Comp
 L Reference_Voltage:TL431DBZ U6
 U 1 1 61EFE4BA
-P 8350 2400
-F 0 "U6" V 8396 2330 50  0000 R CNN
-F 1 "TL431DBZ" H 8300 2300 50  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 8350 2250 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 8350 2400 50  0001 C CIN
-	1    8350 2400
+P 8500 2200
+F 0 "U6" V 8546 2130 50  0000 R CNN
+F 1 "TL431DBZ" H 8450 2100 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8500 2050 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 8500 2200 50  0001 C CIN
+	1    8500 2200
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1758,22 +1652,11 @@ Wire Wire Line
 	8100 2100 8100 2250
 Wire Wire Line
 	8250 2200 8400 2200
-Connection ~ 8250 2200
-Wire Wire Line
-	8250 2200 8250 2400
-Wire Wire Line
-	8350 2300 8350 2000
-Connection ~ 8350 2000
-Wire Wire Line
-	8350 2500 8350 2600
-Connection ~ 8350 2600
-Wire Wire Line
-	8350 2600 8500 2600
 Wire Wire Line
 	5750 1900 7650 1900
 Connection ~ 7650 1900
 Wire Wire Line
-	6400 1350 8500 1350
+	6400 1350 7650 1350
 Wire Wire Line
 	2550 4650 2900 4650
 Wire Wire Line
@@ -1786,16 +1669,16 @@ Wire Wire Line
 Wire Wire Line
 	3700 4850 3700 4950
 Wire Wire Line
-	4950 6250 4950 6400
+	4950 6050 4950 6200
 $Comp
 L Connector:Screw_Terminal_01x02 J6
 U 1 1 61695082
-P 5150 6500
-F 0 "J6" H 5068 6717 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 5068 6626 50  0000 C CNN
-F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 5150 6500 50  0001 C CNN
-F 3 "~" H 5150 6500 50  0001 C CNN
-	1    5150 6500
+P 5150 6300
+F 0 "J6" H 5068 6517 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 5068 6426 50  0000 C CNN
+F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-2pol" H 5150 6300 50  0001 C CNN
+F 3 "~" H 5150 6300 50  0001 C CNN
+	1    5150 6300
 	1    0    0    1   
 $EndComp
 Wire Wire Line
@@ -1867,10 +1750,6 @@ F 3 "~" H 5650 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 4400 6800 4400
-Wire Wire Line
-	6400 5400 6800 5400
-Wire Wire Line
 	6250 4400 6000 4400
 Connection ~ 6250 4400
 Wire Wire Line
@@ -1884,4 +1763,293 @@ Wire Wire Line
 Connection ~ 5650 5400
 Text Label 5400 5400 0    50   ~ 0
 RECT2
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 6187BBB8
+P 1150 4800
+F 0 "J1" H 1068 5117 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 1068 5026 50  0000 C CNN
+F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-3pol" H 1150 4800 50  0001 C CNN
+F 3 "~" H 1150 4800 50  0001 C CNN
+	1    1150 4800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7450 1800 7450
+$Comp
+L Device:D D23
+U 1 1 618ABF56
+P 1950 7350
+F 0 "D23" H 1950 7250 50  0000 C CNN
+F 1 "M7" H 1950 7475 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 1950 7350 50  0001 C CNN
+F 3 "~" H 1950 7350 50  0001 C CNN
+	1    1950 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D24
+U 1 1 618ACADF
+P 1950 7550
+F 0 "D24" H 1950 7450 50  0000 C CNN
+F 1 "M7" H 1950 7675 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 1950 7550 50  0001 C CNN
+F 3 "~" H 1950 7550 50  0001 C CNN
+	1    1950 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 7350 1800 7450
+Connection ~ 1800 7450
+Wire Wire Line
+	1800 7450 1800 7550
+Wire Wire Line
+	2450 7450 2800 7450
+Wire Wire Line
+	1350 6900 1800 6900
+$Comp
+L Device:D D21
+U 1 1 6191C715
+P 1950 6800
+F 0 "D21" H 1950 6700 50  0000 C CNN
+F 1 "M7" H 1950 6925 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 1950 6800 50  0001 C CNN
+F 3 "~" H 1950 6800 50  0001 C CNN
+	1    1950 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D22
+U 1 1 6191C71B
+P 1950 7000
+F 0 "D22" H 1950 6900 50  0000 C CNN
+F 1 "M7" H 1950 7125 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 1950 7000 50  0001 C CNN
+F 3 "~" H 1950 7000 50  0001 C CNN
+	1    1950 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6800 1800 6900
+Connection ~ 1800 6900
+Wire Wire Line
+	1800 6900 1800 7000
+Wire Wire Line
+	2100 6800 2100 6900
+Connection ~ 2100 6900
+Wire Wire Line
+	2100 6900 2100 7000
+Text Label 2000 5450 0    50   ~ 0
+EARTH
+Connection ~ 1350 6900
+Wire Wire Line
+	2100 6900 2450 6900
+Text Label 2200 6900 0    50   ~ 0
+DGND
+Text Label 2550 7450 0    50   ~ 0
+AGND
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 6194B8AD
+P 2550 4950
+F 0 "J4" H 2468 5267 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 2468 5176 50  0000 C CNN
+F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-3pol" H 2550 4950 50  0001 C CNN
+F 3 "~" H 2550 4950 50  0001 C CNN
+	1    2550 4950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4850 2900 4850
+Wire Wire Line
+	2750 4950 2900 4950
+Wire Wire Line
+	2750 5050 2750 5450
+Wire Wire Line
+	2750 5450 1350 5450
+Connection ~ 1350 5450
+$Comp
+L Device:C C9
+U 1 1 6169249F
+P 1950 6650
+F 0 "C9" H 2065 6696 50  0000 L CNN
+F 1 "100n" H 2065 6605 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 1988 6500 50  0001 C CNN
+F 3 "~" H 1950 6650 50  0001 C CNN
+	1    1950 6650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 6650 1800 6800
+Connection ~ 1800 6800
+Wire Wire Line
+	2100 6650 2100 6800
+Connection ~ 2100 6800
+Wire Wire Line
+	1350 6900 1350 7450
+Wire Wire Line
+	1800 6050 1650 6050
+Wire Wire Line
+	1650 6050 1650 4700
+Wire Wire Line
+	1350 5450 1350 6900
+Wire Wire Line
+	1350 4900 1350 5450
+Text Label 1400 4800 0    50   ~ 0
+NEUTRAL
+Text Label 1400 4700 0    50   ~ 0
+ACTIVE
+Wire Wire Line
+	6000 2600 6400 2600
+Wire Wire Line
+	8100 2600 8500 2600
+Entry Wire Line
+	8650 4250 8750 4350
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 61889A23
+P 6000 6950
+F 0 "H1" V 5954 7100 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6045 7100 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 6000 6950 50  0001 C CNN
+F 3 "~" H 6000 6950 50  0001 C CNN
+	1    6000 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6188A16F
+P 6000 7150
+F 0 "H2" V 5954 7300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6045 7300 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 6000 7150 50  0001 C CNN
+F 3 "~" H 6000 7150 50  0001 C CNN
+	1    6000 7150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D25
+U 1 1 616B1FD2
+P 7650 1600
+F 0 "D25" H 7750 1700 50  0000 C CNN
+F 1 "LL4148" H 7650 1500 50  0000 C CNN
+F 2 "Diodes_SMD:D_MiniMELF" H 7650 1600 50  0001 C CNN
+F 3 "~" H 7650 1600 50  0001 C CNN
+	1    7650 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 1450 7650 1350
+Connection ~ 7650 1350
+Wire Wire Line
+	7650 1350 8500 1350
+Wire Wire Line
+	7650 1750 7650 1900
+$Comp
+L wbt-device:TRANSF6_E TR1
+U 1 1 6173240D
+P 4000 4850
+F 0 "TR1" H 4000 4468 50  0000 C CNN
+F 1 "TRANSF6_E" H 4000 4559 50  0000 C CNN
+F 2 "power:Trafo_CHK-EI54-12VA_Combo_Vigor" H 4000 4850 50  0001 C CNN
+F 3 "" H 4000 4850 50  0001 C CNN
+	1    4000 4850
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3800 5300 3400 5300
+Text Label 3500 5300 0    50   ~ 0
+EARTH
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 617A0AE4
+P 6000 7550
+F 0 "H4" V 5954 7700 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6045 7700 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 6000 7550 50  0001 C CNN
+F 3 "~" H 6000 7550 50  0001 C CNN
+	1    6000 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 617A13E6
+P 6000 7350
+F 0 "H3" V 5954 7500 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6045 7500 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3_DIN965_Pad" H 6000 7350 50  0001 C CNN
+F 3 "~" H 6000 7350 50  0001 C CNN
+	1    6000 7350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 6950 5800 6950
+Wire Wire Line
+	5800 6950 5800 7150
+Wire Wire Line
+	5800 7550 5900 7550
+Wire Wire Line
+	5900 7350 5800 7350
+Connection ~ 5800 7350
+Wire Wire Line
+	5800 7350 5800 7550
+Wire Wire Line
+	5900 7150 5800 7150
+Connection ~ 5800 7150
+Wire Wire Line
+	5800 7150 5800 7350
+Text Label 5500 7550 0    50   ~ 0
+EARTH
+Wire Wire Line
+	5800 7550 5450 7550
+Connection ~ 5800 7550
+Text Label 2600 4650 0    50   ~ 0
+SWAC
+Text Label 3550 4650 0    50   ~ 0
+PRI
+Text Label 6500 4400 0    50   ~ 0
+RECT1B
+Text Label 6500 5400 0    50   ~ 0
+RECT2B
+$Comp
+L Device:D D26
+U 1 1 619BAD85
+P 2300 7350
+F 0 "D26" H 2300 7250 50  0000 C CNN
+F 1 "M7" H 2300 7475 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 2300 7350 50  0001 C CNN
+F 3 "~" H 2300 7350 50  0001 C CNN
+	1    2300 7350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D27
+U 1 1 619BB291
+P 2300 7550
+F 0 "D27" H 2300 7450 50  0000 C CNN
+F 1 "M7" H 2300 7675 50  0000 C CNN
+F 2 "Diodes_SMD:D_SMA" H 2300 7550 50  0001 C CNN
+F 3 "~" H 2300 7550 50  0001 C CNN
+	1    2300 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 7350 2150 7350
+Wire Wire Line
+	2100 7550 2150 7550
+Wire Wire Line
+	2450 7350 2450 7450
+Connection ~ 2450 7450
+Wire Wire Line
+	2450 7450 2450 7550
+Text Notes 2450 7150 0    50   ~ 0
+Safety Ground Lifts
+Wire Wire Line
+	6400 4400 7600 4400
+Wire Wire Line
+	6400 4900 7600 4900
+Wire Wire Line
+	6400 5400 7600 5400
+Text Notes 6600 5900 0    50   ~ 0
+Extern Caps\nor DC Input
 $EndSCHEMATC
