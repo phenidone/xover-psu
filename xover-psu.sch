@@ -1948,17 +1948,17 @@ Wire Wire Line
 $Comp
 L wbt-device:TRANSF6_E TR1
 U 1 1 6173240D
-P 4000 4950
-F 0 "TR1" H 4000 4568 50  0000 C CNN
-F 1 "TRANSF6_E" H 4000 4659 50  0000 C CNN
-F 2 "power:Trafo_CHK-EI54-12VA_Combo_Vigor" H 4000 4950 50  0001 C CNN
-F 3 "" H 4000 4950 50  0001 C CNN
-	1    4000 4950
-	1    0    0    -1  
+P 4000 4850
+F 0 "TR1" H 4000 4468 50  0000 C CNN
+F 1 "TRANSF6_E" H 4000 4559 50  0000 C CNN
+F 2 "power:Trafo_CHK-EI54-12VA_Combo_Vigor" H 4000 4850 50  0001 C CNN
+F 3 "" H 4000 4850 50  0001 C CNN
+	1    4000 4850
+	1    0    0    1   
 $EndComp
 Wire Wire Line
-	3800 4500 3400 4500
-Text Label 3500 4500 0    50   ~ 0
+	3800 5300 3400 5300
+Text Label 3500 5300 0    50   ~ 0
 EARTH
 $Comp
 L Mechanical:MountingHole_Pad H4
