@@ -16,7 +16,7 @@ AC power is switched in accordance with an opto-isolated 12V-remote signal.
 The circuit provides:
 * +/-12VDC, linear regulated
 * 12VDC from always-on switchmode brick, for control circuits
-* (un)muting relay output
+* un-muting relay output
 
 Very drafty.
 

@@ -1,4 +1,4 @@
-230065586385662
+241548949552900
 Air_Coils_SML_NEOSID
 Neosid_Air-Coil_SML_1turn_HDM0131A
 
@@ -41118,6 +41118,27 @@ pot
 3
 3
 power
+C_Rect_L7.0mm_W4.5mm_P5_1210_combo
+C, Rect series, Radial, pin pitch=5.00mm, , length*width=7*4.5mm^2, Capacitor
+C Rect series Radial pin pitch 5.00mm  length 7mm width 4.5mm Capacitor
+0
+4
+2
+power
+C_Rect_L7.0mm_W4.5mm_P5_1210x2_combo
+C, Rect series, Radial, pin pitch=5.00mm, , length*width=7*4.5mm^2, Capacitor
+C Rect series Radial pin pitch 5.00mm  length 7mm width 4.5mm Capacitor
+0
+6
+2
+power
+C_Rect_L19.0mm_W11.0mm_combo
+C, Rect series, Radial, pin pitch=15.00mm, , length*width=19*11mm^2, Capacitor, http://www.wima.com/EN/WIMA_MKS_4.pdf
+C Rect series Radial pin pitch 15.00mm  length 19mm width 11mm Capacitor
+0
+9
+2
+power
 DCDC-MICRODC-10W
 DCDC-Converter, TRACO, TEN10-xxxx, Generic, RevA
 DCDC-Converter, MICRODC, WRA, WRB, ZMD
@@ -41229,3 +41250,31 @@ SMD_solder_bridge_3pin
 0
 3
 3
+tz
+Tyrrell-Zaibatsu-10
+
+
+0
+0
+0
+tz
+Tyrrell-Zaibatsu-10-Back
+
+
+0
+0
+0
+tz
+Tyrrell-Zaibatsu-20
+
+
+0
+0
+0
+tz
+Tyrrell-Zaibatsu-20-Back
+
+
+0
+0
+0
