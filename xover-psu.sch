@@ -16,12 +16,12 @@ $EndDescr
 $Comp
 L Connector:Screw_Terminal_01x03 J7
 U 1 1 61A2D78B
-P 6450 5800
-F 0 "J7" H 6368 6117 50  0000 C CNN
-F 1 "Screw_Terminal_01x03" H 6368 6026 50  0000 C CNN
-F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-3pol" H 6450 5800 50  0001 C CNN
-F 3 "~" H 6450 5800 50  0001 C CNN
-	1    6450 5800
+P 6600 5800
+F 0 "J7" H 6518 6117 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 5650 5800 50  0000 C CNN
+F 2 "Terminals_Phoenix:TerminalBlock_Phoenix_MKDS1.5-3pol" H 6600 5800 50  0001 C CNN
+F 3 "~" H 6600 5800 50  0001 C CNN
+	1    6600 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -38,8 +38,6 @@ $EndComp
 Wire Wire Line
 	8800 4800 8800 4900
 Connection ~ 8800 4900
-Wire Wire Line
-	8800 4900 9000 4900
 $Comp
 L Device:C C14
 U 1 1 61A4C047
@@ -108,10 +106,6 @@ F 3 "~" H 5350 5200 50  0001 C CNN
 	1    5350 5200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5050 4400 5050 4800
-Wire Wire Line
-	5050 5000 5050 5400
 $Comp
 L Device:C C5
 U 1 1 615DA40F
@@ -135,32 +129,18 @@ F 3 "~" H 7600 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
-U 1 1 615FF89D
-P 9000 4650
-F 0 "C7" H 9115 4696 50  0000 L CNN
-F 1 "22u" H 9115 4605 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D6.0mm_P5.00mm" H 9038 4500 50  0001 C CNN
-F 3 "~" H 9000 4650 50  0001 C CNN
-	1    9000 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C15
+L Device:CP C15
 U 1 1 615FFB71
-P 9000 5150
-F 0 "C15" H 9115 5196 50  0000 L CNN
-F 1 "22u" H 9115 5105 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D6.0mm_P5.00mm" H 9038 5000 50  0001 C CNN
-F 3 "~" H 9000 5150 50  0001 C CNN
-	1    9000 5150
+P 9200 5150
+F 0 "C15" H 9315 5196 50  0000 L CNN
+F 1 "22u" H 9315 5105 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D6.0mm_P5.00mm" H 9238 5000 50  0001 C CNN
+F 3 "~" H 9200 5150 50  0001 C CNN
+	1    9200 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9000 4800 9000 4900
-Connection ~ 9000 4900
-Wire Wire Line
-	9000 4900 9000 5000
+	9200 4900 9200 5000
 $Comp
 L Device:D D15
 U 1 1 61608971
@@ -191,7 +171,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 4400 5650 4500
 Wire Wire Line
-	6400 5300 6400 5400
+	6900 5300 6900 5400
 Wire Wire Line
 	5650 4800 5650 4900
 Wire Wire Line
@@ -199,22 +179,6 @@ Wire Wire Line
 Connection ~ 7600 4900
 Wire Wire Line
 	7600 5300 7600 5400
-Wire Wire Line
-	4350 4650 4200 4650
-Wire Wire Line
-	4350 4400 4350 4650
-Wire Wire Line
-	4200 5150 4350 5150
-Wire Wire Line
-	4350 5150 4350 5400
-Wire Wire Line
-	4750 4800 5050 4800
-Wire Wire Line
-	4750 4900 4900 4900
-Wire Wire Line
-	4750 5000 5050 5000
-Wire Wire Line
-	4900 5250 4900 4900
 Wire Wire Line
 	3800 4950 3700 4950
 Wire Wire Line
@@ -247,38 +211,28 @@ F 3 "~" H 1300 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 4850 4200 4900
-Wire Wire Line
-	4350 4400 5050 4400
-Wire Wire Line
-	4350 5400 5050 5400
-Wire Wire Line
-	4200 4900 4450 4900
-Wire Wire Line
-	4450 4900 4450 5250
-Wire Wire Line
-	4450 5250 4900 5250
 Connection ~ 4200 4900
 Wire Wire Line
 	4200 4900 4200 4950
 $Comp
 L Device:CP C4
 U 1 1 616124C4
-P 6400 4650
-F 0 "C4" H 6518 4696 50  0000 L CNN
-F 1 "3300u" H 6518 4605 50  0000 L CNN
-F 2 "smd:CP_Elec_EEEFK-K16" H 6438 4500 50  0001 C CNN
-F 3 "~" H 6400 4650 50  0001 C CNN
-	1    6400 4650
+P 6900 4650
+F 0 "C4" H 7018 4696 50  0000 L CNN
+F 1 "3300u" H 7018 4605 50  0000 L CNN
+F 2 "smd:CP_Elec_EEEFK-K16" H 6938 4500 50  0001 C CNN
+F 3 "~" H 6900 4650 50  0001 C CNN
+	1    6900 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 4400 6400 4500
+	6900 4400 6900 4500
 $Comp
 L Device:R R20
 U 1 1 6168BC76
 P 8050 4700
-F 0 "R20" V 7843 4700 50  0000 C CNN
-F 1 "4k3" V 8050 4700 50  0000 C CNN
+F 0 "R20" V 8150 4700 50  0000 C CNN
+F 1 "5k1" V 8050 4700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 7980 4700 50  0001 C CNN
 F 3 "~" H 8050 4700 50  0001 C CNN
 	1    8050 4700
@@ -357,12 +311,10 @@ Wire Wire Line
 	5050 4800 5200 4800
 Wire Wire Line
 	5200 4800 5200 4750
-Connection ~ 5050 4800
 Wire Wire Line
 	5350 5000 5350 4750
 Wire Wire Line
 	5050 5000 5350 5000
-Connection ~ 5050 5000
 Wire Wire Line
 	5350 5000 5350 5050
 Connection ~ 5350 5000
@@ -383,8 +335,8 @@ $Comp
 L Device:R R21
 U 1 1 619D917A
 P 8200 4700
-F 0 "R21" V 7993 4700 50  0000 C CNN
-F 1 "4k3" V 8200 4700 50  0000 C CNN
+F 0 "R21" V 8100 4600 50  0000 C CNN
+F 1 "6k8" V 8200 4700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8130 4700 50  0001 C CNN
 F 3 "~" H 8200 4700 50  0001 C CNN
 	1    8200 4700
@@ -394,8 +346,8 @@ $Comp
 L Device:R R24
 U 1 1 619D965D
 P 8200 5100
-F 0 "R24" V 7993 5100 50  0000 C CNN
-F 1 "4k3" V 8200 5100 50  0000 C CNN
+F 0 "R24" V 8100 5000 50  0000 C CNN
+F 1 "6k8" V 8200 5100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8130 5100 50  0001 C CNN
 F 3 "~" H 8200 5100 50  0001 C CNN
 	1    8200 5100
@@ -405,8 +357,8 @@ $Comp
 L Device:R R23
 U 1 1 616FED02
 P 8050 5100
-F 0 "R23" V 7843 5100 50  0000 C CNN
-F 1 "4k3" V 8050 5100 50  0000 C CNN
+F 0 "R23" V 8150 5100 50  0000 C CNN
+F 1 "5k1" V 8050 5100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 7980 5100 50  0001 C CNN
 F 3 "~" H 8050 5100 50  0001 C CNN
 	1    8050 5100
@@ -454,7 +406,7 @@ L Device:R R18
 U 1 1 6168B59F
 P 8400 4300
 F 0 "R18" H 8470 4346 50  0000 L CNN
-F 1 "240" V 8400 4200 50  0000 L CNN
+F 1 "270" V 8400 4200 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 8330 4300 50  0001 C CNN
 F 3 "~" H 8400 4300 50  0001 C CNN
 	1    8400 4300
@@ -511,7 +463,7 @@ L Device:R R28
 U 1 1 616FF259
 P 8400 5500
 F 0 "R28" H 8470 5546 50  0000 L CNN
-F 1 "240" V 8400 5400 50  0000 L CNN
+F 1 "270" V 8400 5400 50  0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 8330 5500 50  0001 C CNN
 F 3 "~" H 8400 5500 50  0001 C CNN
 	1    8400 5500
@@ -581,13 +533,9 @@ Wire Wire Line
 	5350 5400 5650 5400
 Connection ~ 5350 5400
 Wire Wire Line
-	4900 4900 5650 4900
-Connection ~ 4900 4900
+	6900 4800 6900 4900
 Wire Wire Line
-	6400 4800 6400 4900
-Connection ~ 6400 4900
-Wire Wire Line
-	6400 4900 6400 5000
+	6900 4900 6900 5000
 Wire Wire Line
 	2300 3500 2550 3500
 Connection ~ 2550 3500
@@ -675,7 +623,7 @@ U 1 1 616FEEB4
 P 2550 2250
 F 0 "U2" H 2550 2575 50  0000 C CNN
 F 1 "817C" H 2550 2484 50  0000 C CNN
-F 2 "Housings_DIP:DIP-4_W7.62mm_Socket" H 2350 2050 50  0001 L CIN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 2350 2050 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 2550 2250 50  0001 L CNN
 	1    2550 2250
 	1    0    0    -1  
@@ -810,9 +758,9 @@ F 3 "~" H 2150 3500 50  0001 C CNN
 	1    2150 3500
 	1    0    0    -1  
 $EndComp
-Text Label 4500 4400 0    50   ~ 0
+Text Label 4550 4650 0    50   ~ 0
 AC1
-Text Label 4550 5400 0    50   ~ 0
+Text Label 4550 5150 0    50   ~ 0
 AC2
 Wire Wire Line
 	2200 2350 2250 2350
@@ -995,13 +943,9 @@ F 3 "~" H 9950 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8800 4100 9000 4100
-Wire Wire Line
 	10250 4100 10250 4800
 Wire Wire Line
 	8800 4100 8800 4500
-Wire Wire Line
-	9000 4100 9000 4500
 Wire Wire Line
 	9600 4100 9600 4500
 Connection ~ 9600 4100
@@ -1014,9 +958,7 @@ Wire Wire Line
 Wire Wire Line
 	8800 5300 8800 5700
 Wire Wire Line
-	9000 5300 9000 5700
-Wire Wire Line
-	9000 5700 8800 5700
+	9200 5300 9200 5700
 Wire Wire Line
 	9600 5300 9600 5700
 Connection ~ 9600 5700
@@ -1056,7 +998,7 @@ L Relay:RAYEX-L90S K1
 U 1 1 62014E4C
 P 2150 4350
 F 0 "K1" V 1583 4350 50  0000 C CNN
-F 1 "T9GS1L14-12" V 1674 4350 50  0000 C CNN
+F 1 "T9GS1L24-12" V 1674 4350 50  0000 C CNN
 F 2 "power:Potter_T9G_Relay" H 2600 4300 50  0001 L CNN
 F 3 "https://a3.sofastcdn.com/attachment/7jioKBjnRiiSrjrjknRiwS77gwbf3zmp/L90-SERIES.pdf" H 2800 4200 50  0001 L CNN
 	1    2150 4350
@@ -1076,7 +1018,7 @@ Connection ~ 2900 5150
 Connection ~ 1500 5150
 Wire Wire Line
 	1500 5150 1500 6450
-Text Label 10050 4900 0    50   ~ 0
+Text Label 4550 4900 0    50   ~ 0
 AGND
 Text Label 5400 4400 0    50   ~ 0
 RECT1
@@ -1086,35 +1028,6 @@ Text Notes 8900 1300 0    50   ~ 0
 Relay driver
 Text Notes 6250 1350 0    50   ~ 0
 AC presence detect\n50ms delays
-Wire Wire Line
-	9000 4100 9200 4100
-Connection ~ 9000 4100
-Wire Wire Line
-	9200 4100 9200 4150
-Connection ~ 9200 4100
-Wire Wire Line
-	9200 4100 9600 4100
-Wire Wire Line
-	9200 4450 9200 4500
-Wire Wire Line
-	9200 4900 9600 4900
-Wire Wire Line
-	9200 4800 9200 4900
-Wire Wire Line
-	9200 4900 9200 5000
-Connection ~ 9200 4900
-Wire Wire Line
-	9200 4900 9000 4900
-Wire Wire Line
-	9200 5300 9200 5350
-Wire Wire Line
-	9200 5700 9200 5650
-Wire Wire Line
-	9200 5700 9600 5700
-Wire Wire Line
-	9200 5700 9000 5700
-Connection ~ 9200 5700
-Connection ~ 9000 5700
 $Comp
 L Converter_ACDC:HLK-PM12 PS1
 U 1 1 6164FFC7
@@ -1189,36 +1102,23 @@ Connection ~ 3500 4650
 Wire Wire Line
 	3500 5150 3800 5150
 Connection ~ 3500 5150
-Connection ~ 6400 4400
 Wire Wire Line
-	5650 4900 6150 4900
-Connection ~ 6400 5400
+	6400 5700 6400 4400
 Wire Wire Line
-	6250 5700 6250 4400
+	6400 5800 6300 5800
 Wire Wire Line
-	6250 4400 6400 4400
+	6300 5800 6300 4900
 Wire Wire Line
-	6250 5800 6150 5800
-Wire Wire Line
-	6150 5800 6150 4900
-Connection ~ 6150 4900
-Wire Wire Line
-	6150 4900 6400 4900
-Wire Wire Line
-	6250 5900 6050 5900
-Wire Wire Line
-	6050 5900 6050 5700
-Wire Wire Line
-	6050 5400 6400 5400
+	6400 5900 6200 5900
 $Comp
 L Device:CP C12
 U 1 1 6167F8C6
-P 6400 5150
-F 0 "C12" H 6518 5196 50  0000 L CNN
-F 1 "3300u" H 6518 5105 50  0000 L CNN
-F 2 "smd:CP_Elec_EEEFK-K16" H 6438 5000 50  0001 C CNN
-F 3 "~" H 6400 5150 50  0001 C CNN
-	1    6400 5150
+P 6900 5150
+F 0 "C12" H 7018 5196 50  0000 L CNN
+F 1 "3300u" H 7018 5105 50  0000 L CNN
+F 2 "smd:CP_Elec_EEEFK-K16" H 6938 5000 50  0001 C CNN
+F 3 "~" H 6900 5150 50  0001 C CNN
+	1    6900 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1226,7 +1126,7 @@ L Device:CP C3
 U 1 1 61685BAE
 P 5650 4650
 F 0 "C3" H 5768 4696 50  0000 L CNN
-F 1 "3300u" H 5768 4605 50  0000 L CNN
+F 1 "3300u" H 5700 4550 50  0000 L CNN
 F 2 "smd:CP_Elec_EEEFK-K16" H 5688 4500 50  0001 C CNN
 F 3 "~" H 5650 4650 50  0001 C CNN
 	1    5650 4650
@@ -1237,15 +1137,12 @@ L Device:CP C11
 U 1 1 61686437
 P 5650 5150
 F 0 "C11" H 5768 5196 50  0000 L CNN
-F 1 "3300u" H 5700 5050 50  0000 L CNN
+F 1 "3300u" H 5700 5300 50  0000 L CNN
 F 2 "smd:CP_Elec_EEEFK-K16" H 5688 5000 50  0001 C CNN
 F 3 "~" H 5650 5150 50  0001 C CNN
 	1    5650 5150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6250 4400 6050 4400
-Connection ~ 6250 4400
 Wire Wire Line
 	5700 4400 5650 4400
 Connection ~ 5650 4400
@@ -1516,13 +1413,7 @@ Wire Wire Line
 	2450 7450 2450 7550
 Text Notes 2450 7150 0    50   ~ 0
 Safety Ground Lifts
-Wire Wire Line
-	6400 4400 7600 4400
-Wire Wire Line
-	6400 4900 7600 4900
-Wire Wire Line
-	6400 5400 7600 5400
-Text Notes 6600 5900 0    50   ~ 0
+Text Notes 6750 5900 0    50   ~ 0
 Extern Caps\nor DC Input
 $Comp
 L Device:D D6
@@ -1569,9 +1460,6 @@ Text Notes 10500 2500 0    50   ~ 0
 Unmute
 Wire Wire Line
 	9700 2600 9700 2700
-Connection ~ 9950 2700
-Wire Wire Line
-	9950 2700 9950 2750
 $Comp
 L Device:LED D2
 U 1 1 617B9646
@@ -2007,7 +1895,7 @@ U 1 1 617B9618
 P 5300 1650
 F 0 "U1" H 5300 1975 50  0000 C CNN
 F 1 "817C" H 5300 1884 50  0000 C CNN
-F 2 "Housings_DIP:DIP-4_W7.62mm_Socket" H 5100 1450 50  0001 L CIN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 5100 1450 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5300 1650 50  0001 L CNN
 	1    5300 1650
 	1    0    0    -1  
@@ -2041,7 +1929,6 @@ Wire Wire Line
 Connection ~ 5650 5600
 Wire Wire Line
 	6000 5700 6050 5700
-Connection ~ 6050 5700
 Wire Wire Line
 	6050 5700 6050 5600
 Wire Wire Line
@@ -2060,7 +1947,7 @@ U 1 1 6273392E
 P 5300 1100
 F 0 "U6" H 5300 1425 50  0000 C CNN
 F 1 "817C" H 5300 1334 50  0000 C CNN
-F 2 "Housings_DIP:DIP-4_W7.62mm_Socket" H 5100 900 50  0001 L CIN
+F 2 "Housings_DIP:DIP-4_W7.62mm" H 5100 900 50  0001 L CIN
 F 3 "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf" H 5300 1100 50  0001 L CNN
 	1    5300 1100
 	1    0    0    -1  
@@ -2149,7 +2036,7 @@ L Device:R R35
 U 1 1 62AD3CC4
 P 9050 2150
 F 0 "R35" V 9150 2100 50  0000 C CNN
-F 1 "680" V 9050 2150 50  0000 C CNN
+F 1 "1k" V 9050 2150 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8980 2150 50  0001 C CNN
 F 3 "~" H 9050 2150 50  0001 C CNN
 	1    9050 2150
@@ -2227,4 +2114,72 @@ F 3 "~" H 8800 2500 50  0001 C CNN
 	1    8800 2500
 	1    0    0    -1  
 $EndComp
+Text Notes 5800 850  0    50   ~ 0
+AC Pulses
+Connection ~ 9200 4900
+Wire Wire Line
+	9200 4900 9600 4900
+Connection ~ 9200 5700
+Wire Wire Line
+	9200 5700 9600 5700
+Wire Wire Line
+	8800 5700 9200 5700
+Wire Wire Line
+	9200 4100 9200 4500
+Wire Wire Line
+	9200 4800 9200 4900
+$Comp
+L Device:CP C7
+U 1 1 615FF89D
+P 9200 4650
+F 0 "C7" H 9315 4696 50  0000 L CNN
+F 1 "22u" H 9315 4605 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D6.0mm_P5.00mm" H 9238 4500 50  0001 C CNN
+F 3 "~" H 9200 4650 50  0001 C CNN
+	1    9200 4650
+	1    0    0    -1  
+$EndComp
+Connection ~ 9200 4100
+Wire Wire Line
+	9200 4100 9600 4100
+Wire Wire Line
+	8800 4100 9200 4100
+Wire Wire Line
+	8800 4900 9200 4900
+Connection ~ 6900 4900
+Wire Wire Line
+	6900 4900 7600 4900
+Connection ~ 6900 5400
+Wire Wire Line
+	6900 5400 7600 5400
+Wire Wire Line
+	6050 5400 6200 5400
+Connection ~ 6900 4400
+Wire Wire Line
+	6900 4400 7600 4400
+Connection ~ 6300 4900
+Wire Wire Line
+	6300 4900 6900 4900
+Connection ~ 6400 4400
+Wire Wire Line
+	6400 4400 6900 4400
+Wire Wire Line
+	5650 4900 6300 4900
+Wire Wire Line
+	6050 4400 6400 4400
+Wire Wire Line
+	6200 5900 6200 5400
+Connection ~ 6200 5400
+Wire Wire Line
+	6200 5400 6900 5400
+Wire Wire Line
+	4200 4900 5650 4900
+Wire Wire Line
+	5050 4650 5050 4800
+Wire Wire Line
+	4200 4650 5050 4650
+Wire Wire Line
+	5050 5150 5050 5000
+Wire Wire Line
+	4200 5150 5050 5150
 $EndSCHEMATC
