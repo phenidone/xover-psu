@@ -2182,4 +2182,48 @@ Wire Wire Line
 	5050 5150 5050 5000
 Wire Wire Line
 	4200 5150 5050 5150
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 617B9046
+P 900 700
+F 0 "FID1" H 985 746 50  0000 L CNN
+F 1 "Fiducial" H 985 655 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 900 700 50  0001 C CNN
+F 3 "~" H 900 700 50  0001 C CNN
+	1    900  700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 617F39FF
+P 900 900
+F 0 "FID3" H 985 946 50  0000 L CNN
+F 1 "Fiducial" H 985 855 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 900 900 50  0001 C CNN
+F 3 "~" H 900 900 50  0001 C CNN
+	1    900  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 617F4321
+P 1150 700
+F 0 "FID2" H 1235 746 50  0000 L CNN
+F 1 "Fiducial" H 1235 655 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1150 700 50  0001 C CNN
+F 3 "~" H 1150 700 50  0001 C CNN
+	1    1150 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 617F4BE5
+P 1150 900
+F 0 "FID4" H 1235 946 50  0000 L CNN
+F 1 "Fiducial" H 1235 855 50  0000 L CNN
+F 2 "Fiducials:Fiducial_1mm_Dia_2.54mm_Outer_CopperTop" H 1150 900 50  0001 C CNN
+F 3 "~" H 1150 900 50  0001 C CNN
+	1    1150 900 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
