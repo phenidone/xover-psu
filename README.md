@@ -40,7 +40,7 @@ brownout of preamplifier and power-amplifier circuits.
 
 The unmute logic uses a slow turn-on RC timer and a fast turn-off RC timer, both of which are charged from opto-isolated pulses
 derived from the mains transformer secondary.  The UNMUTE output (12VDC up to 500mA) is enabled after the slow timer charges, 
-which is about 1s after power is applied.
+which is about 1s after power is applied; for a shorter turn-on delay, reduce the value of R2 and/or C1.
 
 When power is withdrawn, the fast timer discharges in about 50ms, which causes Q2 to discharge the C in the slow timer,
 thereby immediately shutting off the UNMUTE output and resetting the startup time.
@@ -60,6 +60,11 @@ DC depending on resistor selection choices.  The circuit should be good for abou
 The board is very densely populated, and on both sides.  First assemble all the surface-mount components on the board front,
 then install all through-hole components (except screw terminals) on the board rear.
 
+### Errata
+
+The pinouts of some TL431 devices have pins 1 and 2 reversed, i.e. they are mis-marked TL432s.  You can, with a little bending
+of their leads, install those upside down and it will work.  The layout assumes the pin order is 1=K, 2=R, 3=A.
+
 ### Component Sourcing
 
 The major/expensive items required are:
@@ -72,7 +77,7 @@ The major/expensive items required are:
 * Rectifier filter caps: Panasonic EEEFK 3300u or similar 18mm square electrolytics
 * Other silicon and passives - buy it on eBay from China
 
-An 0805 passive sample book is very handy for filling out most of the circuit.
+An 0805 passive sample book is very handy for filling out most of the circuit; low-noise/precision values are not required.
 
 ### Output Voltage
 
@@ -87,7 +92,7 @@ in lieu of 3k to get about 15V.
 
 ### Regulator Caps
 
-Regulator output capacitors should preferably be tantalum, or aluminium electrolytic.
+Regulator output capacitors should preferably be tantalum or aluminium electrolytic.
 You can use either C6/C14 (SMD) or C7/C15 (through hole) footprints.  Make 
 sure the capacitors are rated for notably more than the output voltage, 
 e.g. 25V.
@@ -116,7 +121,9 @@ choke if you're feeling EMI-antisocial, though this may result in HF conducted
 EMI reaching your regulated outputs.
 
 Use 500mA M205 slow blow glass fuses; there is one for each of the switchmode and
-linear-regulated parts of the supply.  The switched-AC output is not fused.
+linear-regulated parts of the supply.  The switched-AC output is not fused, and should be good for 
+about 5A before there are issues with terminal blocks.  For switching high-power amplifiers, use the
+spade connectors on the rear of the relay.
 
 ### Grounding
 
@@ -131,16 +138,32 @@ with respect to noise.
 
 DGND is connected to EARTH via two opposed diodes and a capacitor.  They may
 be up to 0.7V apart, and noise from the DC side of the 10M12 should be 
-conducted into EARTH via C18.
-
-These earth-lift circuits should be strong enough to trip an ELCB if there
-is a transformer-isolation fault that brings mains AC power to the low
-voltage side.
+conducted into EARTH via C18.  These ground-lift circuits should be strong 
+enough to trip an ELCB if there is a transformer-isolation fault that brings
+mains AC power to the low voltage side.
 
 The Vigortronix transformers have exposed steel cores which must be grounded via
 mounting screws through the PCB, which are connected via the PCB to the 
 EARTH screw terminal.
 
+### PCB
+
+Use a full-thickness (16.mm) PCB; 1mm boards are too flimsy with all of the heavy power supply components mounted.
+
+## TRL and Regulatory
+
+This design is tested and working in a benign environment at Rev.A.  It has not faced MTBF validation,
+environmental (thermal+vibration) or EMI compliance testing.
+
+In terms of electrical safety, this design
+* is intended for use in Class I (grounded) equipment:
+    * a safety-ground connection is mandatory,
+    * it must be installed inside an IEC-60950 grounded case per Class I;
+* additionally aims to comply with IEC-60950 "reinforced insulation" creepage+clearance rules,
+* uses diode-based ground-lift circuits that may not be legal in all jurisdictions for a Class I device,
+
+The design has not been certified by any regulatory body or independent third party testing agency.  You must 
+not sell any product containing this power supply without first obtaining certification.
 
 ## License
 
